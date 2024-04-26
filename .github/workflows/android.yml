@@ -22,6 +22,6 @@ jobs:
     - name: Opening the working directory
       run: cd CameraColorPicker
     - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+      run: cd CameraColorPicker && chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew build
+      run: cd CameraColorPicker && ./gradlew build
